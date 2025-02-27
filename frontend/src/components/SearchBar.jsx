@@ -6,8 +6,10 @@ const SearchBar = () => {
   const {search, setSearch, showSearch, setShowSearch} = useContext(ShopContext);
 
   return showSearch ? (
-    <div>
-      
+    <div className='border-t botder-b bg-gray-50 text-center'>
+      <div className=''>
+
+      </div>
     </div>
   ) : null
 }
