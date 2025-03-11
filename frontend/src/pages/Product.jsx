@@ -9,6 +9,7 @@ const Product = () => {
   const {products, currency} = useContext(ShopContext);
   const [productData, setProductData] = useState(false);
   const [image, setImage] = useState('');
+  const [size, setSize] = useState('')
 
   const fetchProductData = async () => {
 
@@ -45,6 +46,7 @@ const Product = () => {
             <img className='w-full h-auto' src={image} alt="" />
           </div>
         </div>
+
         {/* Product Information */}
         <div className='flex-1'>
           <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
@@ -62,7 +64,7 @@ const Product = () => {
             <p>Select Size</p>
             <div className='flex gap-2'>
               {productData.sizes.map((item, index) => (
-                <button className={`border py-2 px-4 bg-gray-100`} key={index}>{item}</button>
+                <button onClick={() => setSize(item)} className={`border py-2 px-4 bg-gray-100 ${item === size ? 'border-orange-500' : ''}`} key={index}>{item}</button>
               ))}
             </div>
           </div>
