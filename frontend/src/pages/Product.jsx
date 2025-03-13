@@ -84,6 +84,10 @@ const Product = () => {
           <b className='border px-5 py-3 text-sm'>Description</b>
           <p className='border px-5 py-3 text-sm'>Reviews (122)</p>
         </div>
+        <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
+          <p>Some dummy text</p>
+          <p>Some more dummy text</p>
+        </div>
       </div>
 
     </div>
