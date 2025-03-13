@@ -90,6 +90,9 @@ const Product = () => {
         </div>
       </div>
 
+      {/* Display Related Prodcuts */}
+      
+
     </div>
   ) : <div className='opacity-0'></div>
 }
