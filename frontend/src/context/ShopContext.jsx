@@ -38,9 +38,14 @@ const ShopContextProvider = (props) => {
 
   }
 
-  useEffect(() => {
-    console.log(cartItems)
-  },[cartItems])
+  const getCartCount = () => {
+    let totalCount = 0;
+    for(const items in cartItems) {
+      for(const items in cartItems[items]) {
+
+      }
+    }
+  }
 
   const value = {
     products, currency, delivery_fee,
